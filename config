@@ -62,11 +62,11 @@ KEY_LOCATION=~/.ssh/mykey.rsa
 
 [cluster smallcluster]
 # change this to the name of one of the keypair sections defined above
-KEYNAME = joshkey
+KEYNAME = mykey
 # number of ec2 instances to launch
 CLUSTER_SIZE = 1
 # create the following user on the cluster
-CLUSTER_USER = josh
+CLUSTER_USER = 
 # optionally specify shell (defaults to bash)
 # (options: tcsh, zsh, csh, bash, ksh)
 CLUSTER_SHELL = bash
@@ -108,8 +108,8 @@ NODE_INSTANCE_TYPE = m1.medium
 SPOT_BID = 0.50
 
 [cluster iptemplate]
-KEYNAME = joshkey_thinkpad # joshkey
-CLUSTER_USER = josh
+KEYNAME = mykey
+CLUSTER_USER = 
 CLUSTER_SHELL = bash
 MASTER_INSTANCE_TYPE = m3.xlarge
 AVAILABILITY_ZONE = us-east-1d
@@ -128,8 +128,9 @@ SPOT_BID = 1.0
 #SPOT_BID = 0.5
 ###############################
 #DISABLE_QUEUE = True  # We don't need SGE, faster cluster startup
-PLUGINS = ipcluster
+#PLUGINS = ipcluster
 #VOLUMES = phdresearch
+#PERMISSIONS = ssh, http
 
 ###########################################
 ## Defining Additional Cluster Templates ##
@@ -328,7 +329,7 @@ TO_PORT = 9876
 SETUP_CLASS = starcluster.plugins.ipcluster.IPCluster
 ENABLE_NOTEBOOK = True
 NOTEBOOK_PASSWD = a
-notebook_directory = /home/josh  # /rl-classification/src/RL-Python
+notebook_directory = /home
 #packer = pickle
 
 [plugin ipclusterstop]
