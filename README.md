@@ -13,7 +13,7 @@ To get starcluster running:
 
 3. Select "[2] Write config template to /home/user/.starcluster/config"
 
-4. Replace your .starcluster/config file with the config file from the repo
+4. Replace your .starcluster/config file with the config file from this git repo
 
 5. Enter your AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and CLUSTER_USER
 
