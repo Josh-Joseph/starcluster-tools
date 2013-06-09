@@ -1,6 +1,8 @@
 starcluster-tools
 =================
 
+The scope of this code is a set of tools to make life easier using starcluster for EC2.
+
 Running StarCluster the first time: 
 -----------------------------------
 
