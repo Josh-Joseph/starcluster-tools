@@ -3,7 +3,7 @@
 ####################################
 [global]
 # Configure the default cluster template to use when starting a cluster.
-DEFAULT_TEMPLATE=iptemplate
+DEFAULT_TEMPLATE=researchcluster
 # enable experimental features for this release
 #ENABLE_EXPERIMENTAL=True
 # number of seconds to wait when polling instances (default: 30s)
@@ -107,7 +107,7 @@ NODE_INSTANCE_TYPE = m1.medium
 # request.
 SPOT_BID = 0.50
 
-[cluster iptemplate]
+[cluster researchcluster]
 KEYNAME = mykey
 CLUSTER_USER = 
 CLUSTER_SHELL = bash
@@ -131,6 +131,17 @@ SPOT_BID = 1.0
 #PLUGINS = ipcluster
 #VOLUMES = phdresearch
 #PERMISSIONS = ssh, http
+
+[cluster testcluster]
+KEYNAME = mykey
+CLUSTER_USER =
+CLUSTER_SHELL = bash
+MASTER_INSTANCE_TYPE = t1.micro
+AVAILABILITY_ZONE = us-east-1d
+NODE_IMAGE_ID =
+###############################
+CLUSTER_SIZE = 3
+NODE_INSTANCE_TYPE = t1.micro
 
 ###########################################
 ## Defining Additional Cluster Templates ##
