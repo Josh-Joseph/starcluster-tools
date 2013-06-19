@@ -37,3 +37,8 @@ Other useful resources:
 - [StarCluster's Offical AMIs](http://star.mit.edu/cluster/docs/0.93.3/manual/list_public_amis.html)
 
 - [Using IPython Notebook for parallel learning with scikit-learn](https://github.com/ogrisel/parallel_ml_tutorial) (see [this](https://github.com/ogrisel/parallel_ml_tutorial/blob/master/notebooks/02%20-%20Distributed%20Model%20Selection%20and%20Assessment.ipynb) specifically)
+
+
+License:
+-------
+This module is distrubted under the MIT license.
